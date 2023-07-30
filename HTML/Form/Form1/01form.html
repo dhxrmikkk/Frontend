@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    </head>
+    <body>
+        <form action="" method="get">
+            <br><h2 align="center">Register</h2><br>
+            <div class="container">
+                <div class="mb-3 w-50">
+                    <input type="text" class="form-control" id="firstname" name="firtname" placeholder="Enter Firstname" autocomplete="off" required><br>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Lastname" autocomplete="off" required><br>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" autocomplete="off" required><br>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" autocomplete="off" required ><br>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone no" maxlength="10" autocomplete="off" required><br>
+                    
+                    <label class="form-check-label" for="Hobbies">Select Hobbies :</label><br><br>
+                        <input class="form-check-input" type="checkbox" name="Netflix" value="Netflix" id="Netflix">&nbsp; Netflix &nbsp; 
+                        <input class="form-check-input" type="checkbox" name="Primevideo" value="Primevideo" id="flexCheckDefault">&nbsp; Primevideo &nbsp; 
+                        <input class="form-check-input" type="checkbox" name="Dance" value="Dance" id="Dance">&nbsp; Dance &nbsp; 
+                        <input class="form-check-input" type="checkbox" name="Movies" value="Movies" id="Movies">&nbsp; Movies &nbsp; <br><br>
+
+                    <label class="form-check-label" for="gender">Select Gender :</label><br><br>
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>&nbsp;Male&nbsp;
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">&nbsp;Female&nbsp;<br><br>
+                        
+                    <label class="form-check-label" for="dob">D.O.B :</label><br><br>
+                        <input type="date" class="form-control w-50" name="dob" id="dob"><br>
+
+                    <label class="form-check-label" for="profpic">Profile Picture :</label><br><br>
+                        <input type="file" class="form-control" name="profpic" id="" accept="image/*"><br>
+
+                    <button type="submit" class="btn btn-success">Register</button>
+            </div>
+        </form>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
