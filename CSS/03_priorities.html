@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priorities</title>
+    <style>
+        .heading{
+            color: brown;
+        }
+        .bigfont{
+            font-size: 28px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p class="bigfont">Types of CSS</p>
+    <ul>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+    </ul>
+    <hr>
+    <p class="bigfont">What is Priorities Of CSS Types ?</p>
+    <ol>
+        <li>Inline CSS Has the Priorities at first number</li>
+        <li>Internal CSS Has the Priorities at Second number</li>
+        <li>External CSS Has the Priorities at Third number</li>
+    </ol>
+    <hr>
+    <p class="bigfont">Example :</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis eaque animi dolorem id doloribus pariatur praesentium voluptatum, reprehenderit quod molestias natus aspernatur tenetur eveniet, perferendis porro! Est alias unde deleniti?</p>
+    <p> - Here we have written p tag and applied css with various types </p>
+    <ol>
+        <li>WITH INLINE CSS : <pre>&lt;p style="color:brown"&gt;lorem&lt;/p&gt;</pre></li><br>
+        <li>WITH INTERNAL CSS : <br><br>
+            &lt;style&gt;<br>
+            p
+            <br>{ <br>
+                &nbsp;&nbsp;color:brown; <br>
+            } <br>
+            &lt;/style> <br><br>
+        </li>
+        <li>WITH EXTERNAL CSS : <br><br>
+            p
+            <br>{ <br>
+                &nbsp;&nbsp;color:brown; <br>
+            }
+        </li>
+    </ol>
+    <p class="bigfont">NOTE : in the above example the Priorities of inline css will be consider as first then after internal css and then after External css</p>
+</body>
+</html>

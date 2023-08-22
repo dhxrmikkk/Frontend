@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child</title>
+    <style>
+        div{
+            font-size: 28px;
+        }
+        ol{
+            font-size: 28px;
+        }
+        div>div:nth-child(2){
+            color: blue;
+        }
+        div>div:nth-child(4){
+            color: red;
+        }
+        ol>li:nth-child(3n+1){
+            color: rgb(247, 71, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Example of nth child</h1><br><br>
+    <div class="ex">
+        <div>first div</div>
+        <div>second div</div>
+        <div>third div</div>
+        <div>four div</div>
+        <div>five div</div>
+        <div>six div</div>
+    </div><hr>
+    <ol>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+    </ol>
+    <p style="font-size: 26px; color: brown;">Here we have written code like this :</p>
+    <code style="font-size: 22px;">
+        &lt;div class="ex"><br>
+            &nbsp;&nbsp; &lt;div>first div&lt;/div> <br>
+            &nbsp;&nbsp; &lt;div>second div&lt;/div> <br>
+            &nbsp;&nbsp; &lt;div>third div&lt;/div> <br>
+            &nbsp;&nbsp; &lt;div>four div&lt;/div> <br>
+            &nbsp;&nbsp; &lt;div>five div&lt;/div> <br>
+            &nbsp;&nbsp; &lt;div>six div&lt;/div> <br>
+        &lt;/div> <br><br><br>
+
+        &lt;style> <br>
+
+        &nbsp;&nbsp;div>div:nth-child(2) <br>&nbsp;&nbsp;{ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;color: blue; <br>
+        &nbsp;&nbsp;} <br><br>
+           
+        &nbsp;&nbsp;div>div:nth-child(4) <br>&nbsp;&nbsp;{ <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;color: red; <br>
+        &nbsp;&nbsp;} <br>
+
+        &lt;/style>
+    </code><hr>
+    <p style="font-size: 26px; color: brown;">NOTE : It will generate output like blow</p>
+    <div class="ex">
+        <div>first div</div>
+        <div>second div</div>
+        <div>third div</div>
+        <div>four div</div>
+        <div>five div</div>
+        <div>six div</div>
+    </div>
+</body>
+</html>

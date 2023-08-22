@@ -1,0 +1,42 @@
+/* @import url(https://db.onlinewebfonts.com/c/5ebc67ab9ab9e86517c65dd6ac7c85aa?family=Dauphin); */
+@font-face {
+    font-family:DauphinPlain ;
+    src: url(../../Dauphin.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+.container{
+    margin-top: 250px;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+}
+#languages{
+    margin: 20px 15px 5px 15px ;
+}
+#Languages>a{
+    color: black;
+    padding: 2px;
+    font-size: 14px;
+    line-height: 10px;
+}
+.ltr>a{
+    color: black;
+}
+h1{
+    font-family: DauphinPlain;
+    font-weight: 400;
+    font-size: 70px;
+}
+h4{
+    margin: 10px 10px 5px 10px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 10;
+}
