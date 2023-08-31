@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        body>h1{
+            text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Task 1</h1>
+        <style>
+        .row1{
+            display: flex;
+            flex-wrap: nowrap;
+            height: 200px; 
+        }
+        .child1{
+            background-color: #154c79;
+            margin-right: 4px;
+            border: 3px solid black;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .col:nth-child(1) {
+            width:30%;
+        }
+        .col:nth-child(2) {
+            width: 10%;
+        }
+        .col:nth-child(3) {
+            width: 60%;
+        }
+        </style>
+        <div class="box1">
+            <div class="row1">
+                <div class="col child1">Confused</div>
+                <div class="col child1">Happy</div>
+                <div class="col child1">Sad</div>
+            </div>
+        </div>
+        <style>
+        .row2{
+            display: flex;
+            flex-wrap: nowrap;
+            height: 30px; 
+        }
+        .child{
+            background-color: #154c79;
+            border: 3px solid black;
+            text-align: center;
+        }
+        .col2:nth-child(1) {
+            width:50%;
+            background-color: aqua;
+        }
+        .col2:nth-child(2) {
+            width: 30%;
+            background-color: coral;
+        }
+        .col2:nth-child(3) {
+            width: 20%;
+            background-color: aqua;
+        }
+        </style>
+        <div class="box2">
+            <div class="row2">
+                <div class="col2 child">Warm</div>
+                <div class="col2 child">Cool</div>
+                <div class="col2 child">Hot</div>
+            </div>
+        </div>
+</body>
+</html>

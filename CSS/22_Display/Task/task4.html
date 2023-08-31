@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body>h1{
+            text-align: center;
+        }
+        .container{
+            background-color: #fffcf4;
+            height: 375px;
+            width: 50%;
+            border-radius: 4px;
+            margin: 1px auto;
+            /* border: 1px solid black; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        code{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 4</h1>
+    <div class="container">
+        <h3>Default Setup</h3>
+        <p>Default Setup of flex is <code>flex : 0 1 auto.</code>That's shorthand for <code>flex-grow,flex-shrink,</code> and <code>flex-besis</code>properties values.</p>
+        <p>This setup basically tells us "All the flex children <strong>Should not grow,Should shrink</strong> at the same rate,and have their <strong>intial size based on their width or height</strong>"</p>
+        <!--------------------------------------------------------------------------------------------------->
+        <style>
+            .row2{
+                display: flex;
+                flex-wrap: nowrap;
+                height: 200px; 
+                margin: 5px;
+            }
+            .child{
+                border-radius: 4px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                color:white;
+                text-align: justify;
+            }
+            .child>h4{
+                margin: 4px;
+            }
+            .child>p{
+                margin: 4px;
+            }
+            .col2:nth-child(1) {
+                width:60%;
+                background-color: #6495ed;
+                margin-right: 10px;
+            }
+            .col2:nth-child(2) {
+                width: 10%;
+                background-color: #20b2aa;
+                margin-right: 10px;
+            }
+            .col2:nth-child(3) {
+                width: 30%;
+                background-color: #da70d6;
+            }
+            </style>
+                <div class="row2">
+                    <div class="col2 child">
+                        <h4>First Card</h4>
+                        <p>On the other hand,we denounce with eighteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,so blinded by desire,that they cannot foresee the pain and trouble that are bound to ensure;and equal blame belongs to those who fail in their duty through weakness of will,which is the same as saying through shrinking from toil and pain.</p>
+                    </div>
+                    <div class="col2 child">
+                        <h4>Second Card</h4>
+                        <p>I am The shortest.</p>
+                    </div>
+                    <div class="col2 child">
+                        <h4>Third Card</h4>
+                        <p>But in certain circummstances and owing to the claims of duty or the obligations of business it will frequantly occur that pleasure have to be repudiated and annoyance accepted.</p>
+                    </div>
+                </div>
+        </div>
+</body>
+</html>
