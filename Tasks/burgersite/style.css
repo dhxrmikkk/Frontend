@@ -1,3 +1,42 @@
-.dinflex{
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contianer{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    background: url(asset/Rectangle.png);
+}
+.row{
     display: inline-flex;
+}
+.row>.logo{
+    padding: 20px;
+}
+
+.row>.text>p{
+    font-size: 17px;
+    line-height: 71px;
+    color: #3d2514;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: right;
+}
+.nav-link{
+    margin-left: 800px;
+}
+.nav-link>ul>li{
+    display: inline-block;
+    justify-content: end;
+    font-size: 21px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 400;
+    font-family: "Bebas Neue";
+    padding: 10px;
 }
