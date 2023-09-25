@@ -70,11 +70,12 @@ body{
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    justify-content: space-between;
 }
-/* .searchBar {
+.searchBar {
     width: 15%;
     display: flex;
-  }
+}
   
   #searchQueryInput {
     width: 100%;
@@ -98,7 +99,7 @@ body{
   
   #searchQuerySubmit:hover {
     cursor: pointer;
-  } */
+  }
 li:nth-child(1n),li:nth-child(3n+1){
     margin-right:65px;
 }
