@@ -1,74 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face {
-    font-family: "Source Sans Pro";
     src: url(assets/fonts/source-sans-pro/SourceSansPro-Black.otf);
+    font-family: "Source Sans Pro";
 }
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
-body{
-    /* overflow-x: hidden; */
+.po-rel {
+    position: relative;
 }
-.sec-1{
-    padding-block-start:100px;
+.po-abs {
+    position: absolute;
 }
-.container {
-    width: 80%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-block-end: 0;
-    border: 1px solid black;
-    height: 768px;
-}
-.cnt{
-    width: 100%;
-    margin-block-end: 0;
-    border: 1px solid black;
-    height: 200px;
+.jcs {
+    justify-content: space-between;
 }
 .row {
     display: flex;
 }
-.col {
-    padding: 15px 15px;
-    flex: 1 0 0%;
+.navbar {
+    display: flex;
+    line-height: 50px;
+    padding: 10px;
+    justify-content: space-between;
 }
-.col-60{
-    width: 60%;
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    text-align: center;
+}
+.padd {
+    padding: 50px 0;
+}
+.padd-bot {
+    padding-bottom: 75px;
+}
+.marg {
+    margin-top: 50px;
+}
+.sec4-bg {
     background-color: #202020;
 }
-.col-40{
-    width: 40%;
-    background: url(assets/images/rightbg.png);
+.sec4 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
-.col-40 img{
+.sec4 .col50 {
+    width: 50%;
+}
+.sec4 .left {
+    padding-right: 50px;
+}
+.sec4 .sec4-img {
     width: 100%;
 }
-.col-30{
-    width: 30%;
+.sec4 .sec4-img img {
+    width: 100%;
 }
-.col-70{
-    width: 70%;
-}
-.col-70:nth-child(2){
-    text-transform: uppercase;
+.left h1 {
     font-size: 36px;
     letter-spacing: 4px;
     color: #f4f5f9;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    text-align: right;
+    padding: 40px 0;
+}
+.sec4 .left h3 {
+    font-size: 18px;
+    line-height: 29px;
+    color: #e74c3c;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: right;
+    padding: 20px 0;
+}
+.sec4 .left p {
+    font-size: 14px;
+    line-height: 29px;
+    color: #999999;
     font-weight: 400;
     font-family: "Source Sans Pro";
-    text-align: end;
-    padding-top: 30px;
+    text-align: right;
+    margin: opx 10px;
 }
- .row img{
-    width: 100%;
+.sec4-logo1-pos {
+    left: 724px;
+    top: 170px;
 }
-.pos-r{
-    position: relative;
+.sec4-logo2-pos {
+    top: 300px;
 }
-.pos-ab{
-    position:absolute;
+.sec4-logo3-pos {
+    top: 420px;
+}
+.img{
+    border-radius:35px ;
 }
