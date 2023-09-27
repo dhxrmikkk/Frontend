@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(assets/fonts/source-sans-pro/SourceSansPro-Black.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body{
+    /* overflow-x: hidden; */
+}
+.sec-1{
+    padding-block-start:100px;
+}
+.container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-block-end: 0;
+    border: 1px solid black;
+    height: 768px;
+}
+.cnt{
+    width: 100%;
+    margin-block-end: 0;
+    border: 1px solid black;
+    height: 200px;
+}
+.row {
+    display: flex;
+}
+.col {
+    padding: 15px 15px;
+    flex: 1 0 0%;
+}
+.col-60{
+    width: 60%;
+    background-color: #202020;
+}
+.col-40{
+    width: 40%;
+    background: url(assets/images/rightbg.png);
+}
+.col-40 img{
+    width: 100%;
+}
+.col-30{
+    width: 30%;
+}
+.col-70{
+    width: 70%;
+}
+.col-70:nth-child(2){
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 4px;
+    color: #f4f5f9;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+    text-align: end;
+    padding-top: 30px;
+}
+ .row img{
+    width: 100%;
+}
+.pos-r{
+    position: relative;
+}
+.pos-ab{
+    position:absolute;
+}

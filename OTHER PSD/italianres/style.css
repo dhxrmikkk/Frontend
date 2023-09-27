@@ -73,7 +73,7 @@ body{
     justify-content: space-between;
 }
 .searchBar {
-    width: 15%;
+    width: 100%;
     display: flex;
 }
   
