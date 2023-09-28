@@ -1,0 +1,144 @@
+/* COMMON CSS START */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: #e6e6e6;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+div[class*="col"] {
+    padding: 0 15px;
+}
+.col {
+    flex: 1 0 0%;
+}
+/* header section-1 */
+.ml-a {
+    margin-left: auto;
+}
+.jss{
+    justify-content: space-between;
+}
+.navbar ul li {
+    display: inline-block;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    color: #e6e6e6;
+}
+.navbar ul li a.animation{
+    display: inline-block;
+    position: relative;
+    color: #e6e6e6;
+}
+.animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffa024;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+.animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.txt-c{
+    text-align: center;
+}
+.mt-30{
+    margin: 30px 0;
+}
+/* section-2  */
+.sec-2{
+    padding:2rem 0;
+}
+.col-60{
+    width: 60%;
+}
+.col-40{
+    width: 40%;
+}
+.pg-10{
+    padding: 13rem 4rem;
+}
+.name{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    color: #e6e6e6;
+    font-size: 48px;
+    font-weight: 300;
+}
+.head{
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    color: #e6e6e6;
+    font-size: 22px;
+    font-weight: 300;
+}
+.icons{
+    padding: 1.4rem 0;
+}
+.icons a{
+    color: #e6e6e6;
+    font-size: 36px;
+}
+.icons a:hover{
+    color:#ffa024;
+}
+.typing-demo {
+    width: 16ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #ffa024;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
