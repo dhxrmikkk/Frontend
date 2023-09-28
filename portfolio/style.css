@@ -115,7 +115,8 @@ div[class*="col"] {
 }
 .icons a{
     color: #e6e6e6;
-    font-size: 36px;
+    font-size: 30px;
+    padding-right:0.5rem;
 }
 .icons a:hover{
     color:#ffa024;
