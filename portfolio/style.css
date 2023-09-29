@@ -1,4 +1,4 @@
-/* COMMON CSS START */
+/*------------------------------------------- Common CSS ------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -7,9 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: black;
     color: #e6e6e6;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -36,7 +40,7 @@ div[class*="col"] {
 .col {
     flex: 1 0 0%;
 }
-/* header section-1 */
+/*------------------------------------------- section-1 ------------------------------------------- */
 .ml-a {
     margin-left: auto;
 }
@@ -82,9 +86,10 @@ div[class*="col"] {
 .mt-30{
     margin: 30px 0;
 }
-/* section-2  */
+
+/*------------------------------------------- section-2 ------------------------------------------- */
 .sec-2{
-    padding:2rem 0;
+    padding:1.8rem 0;
 }
 .col-60{
     width: 60%;
@@ -117,9 +122,13 @@ div[class*="col"] {
     color: #e6e6e6;
     font-size: 30px;
     padding-right:0.5rem;
+    transition: 0.3s;
 }
 .icons a:hover{
     color:#ffa024;
+    font-size: 42px;
+    /* padding-right:0.8rem; */
+    transition: 0.3s;
 }
 .typing-demo {
     width: 16ch;
@@ -143,3 +152,21 @@ div[class*="col"] {
       border-color: transparent
     }
   }
+
+/*------------------------------------------- section-3 ------------------------------------------- */
+.sec-3{
+    padding: 1.8rem 0;
+}
+.border{
+    border: 1px solid #e6e6e6;
+}
+.card{
+    padding: 0.5rem;
+}
+.pd-4{
+    padding: 0 4rem;
+}
+.col-o{
+    color: #ffa024;
+    font-size: 2rem;
+}
