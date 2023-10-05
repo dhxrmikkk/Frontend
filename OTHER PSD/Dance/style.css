@@ -1,0 +1,244 @@
+/* COMMON CSS START */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.jss{
+    justify-content: space-between;
+}
+.al-cnter{
+    align-items: center;
+}
+div[class*="col"] {
+    padding: 0 15px;
+}
+.col {
+    flex: 1 0 0%;
+}
+.col-40 {
+    width: 40%;
+    /* flex: 1 0 0%; */
+}
+.col-60 {
+    /* flex: 1 0 0%; */
+    width: 60%;
+}
+.col-50{
+    width: 50%;
+}
+.col-33{
+    width: 33%;
+}
+.ml-a {
+    margin-left: auto;
+}
+
+.txt-e {
+    text-align: end;
+}
+.pos-r{
+    position: relative;
+}
+.pos-ab{
+    position: absolute;
+}
+.z-i-0 {
+    z-index: 0;
+}
+.z-i-1 {
+    z-index: 0;
+}
+
+
+/* section-1  */
+.sec-1{
+    background-image: url(assets/images/headerbg.png);
+    background-size:100% ;
+    background-repeat: no-repeat;
+}
+.d-flex{
+    display: flex;
+}
+.navbar ul li {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 3.18rem;
+}
+.bg{
+    background-color: #303030;
+    padding: 0.6rem 0;
+}
+.dummy{
+    margin: 8rem 0;
+}
+.info{
+    padding: 0 4.68rem;
+}
+.info h1{
+    font-size: 7.8rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+}
+.info p{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    border-radius: 4px;
+    background-color: #e8631c;
+    margin: 2rem 0;
+    padding:0.8rem 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* section-2  */
+.sec-2{
+    background-color: #e8631c;
+    text-align: center;
+}
+.sec-2 h2{
+    padding: 2rem 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+}
+.lorem{
+    font-size: 1.8rem;
+    padding:1rem 13rem ;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+}
+.py-5{
+    padding: 4rem 3rem;
+}
+.card{
+    background-color: #303030;
+    /* align-items: center; */
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+    padding: 0.8rem 0;
+}
+.card p{
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 1.8rem 0;
+}
+
+/* section-3  */
+.sec-3{
+    background-color: #303030;
+}
+.sec-3 h2{
+    padding: 2rem 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+}
+.card2{
+    text-align: center;
+    background-color: #e8631c;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.card2 img{
+    padding: 2rem 0;
+}
+.card2 h3{
+    text-align: center;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+    padding: 0.8rem 0;
+}
+.card2 p{
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 1.8rem 0;
+}
+.price{
+    font-size: 1.5rem;
+    padding: 0.9rem 7.5rem;
+    border-radius: 4px;
+    background-color: #303030;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+/* sec-4  */
+.sec-4{
+    background-color: #e8631c;
+}
+.ml-0{
+    margin:0;
+    padding:0 ;
+}
