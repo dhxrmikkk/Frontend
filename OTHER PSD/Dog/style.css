@@ -1,5 +1,85 @@
+/* COMMON CSS START */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    inline-size: 100%;
+    padding-inline-end:15px ;
+    padding-inline-start:15px ;
+    margin-inline-end:auto ;
+    margin-inline-start:auto;
+}
+.container-fluid{
+    inline-size: 100%;
+    padding-inline-end:15px ;
+    padding-inline-start:15px ;
+    margin-inline-end:auto ;
+    margin-inline-start:auto;
+}
+.row{
+    display: flex;
+    margin-inline-end:-15px ;
+    margin-left:-15px ;
+}
+div[class*="col"] {
+    padding: 0 15px;
+}
+.col {
+    flex: 1 0 0%;
+}
+.txt-l{
+    text-align: left;
+}
+.txt-c{
+    text-align: center;
+}
+.txt-e{
+    text-align: end;
+}
+.jss{
+    justify-content: space-between;
+}
+.pos-r{
+    position: relative;
+}
+.pos-ab{
+    position: absolute;
+}
+a {
+    text-decoration: none;
+}
+/* COMMON CSS END */
+
+/* SECTION - 1 START  */
+.sec-1{
+    background-image: url(assets/images/headerbg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.navbar ul li {
+    display: inline-block;
+}
+.pd{
+    padding: 0.9rem 0;
+}
+.bg{
+    opacity: 0.502;
+    background-color: #5380c1;
+}
+.navbar{
+    margin: 1.8rem 0;
+}
+.navbar ul li a{
+    padding: 0 1.8rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
