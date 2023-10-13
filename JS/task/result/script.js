@@ -4,7 +4,7 @@ function calculate(){
     let marks3 = parseInt(document.getElementById("marks3").value)
     let marks4 = parseInt(document.getElementById("marks4").value)
     if (marks1 == "" || marks2 == "" || marks3 == "" || marks4 == ""){
-        console.log("Value Can't be Empty")
+        document.getElementById("total").innerHTML = "Value Can't be empty";
     }
     else{
         let sum = marks1 + marks2 + marks3 + marks4
