@@ -8,8 +8,25 @@ function calculate(){
     }
     else{
         let sum = marks1 + marks2 + marks3 + marks4
-        let avg = parseFloat(sum / 4)
+        let avg = sum / 4
         document.getElementById("total").innerHTML = "Total is : " + sum;
         document.getElementById("avg").innerHTML = "Avarage is : " + avg;
     }
+}
+
+
+let fnm = document.getElementById('fname')
+let unm = document.getElementById('fname')
+let email = document.getElementById('fname')
+let phone_no = document.getElementById('fname')
+let pswd = document.getElementById('fname')
+let cpswd = document.getElementById('fname')
+
+if (pswd == cpswd) {
+    console.log("password is matched")
+}
+else
+{
+    console.log("password is missmatched")
+
 }
