@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // object containing method
+        // const person = {
+        //     name: 'John',
+        //     greet: function () { console.log('hello'); }
+        // };
+        const person = {
+            name: 'John',
+            age: 30,
+            // accessing name property by using this.name
+            greet: function () { console.log('The name is' + ' ' + this.name); }
+        };
+
+        person.greet();
+
+
+        // constructor function
+        function PersonData() {
+            this.name = 'John',
+                this.age = 23
+        }
+
+        // create an object
+        const personData = new PePersonDatarson();
+    </script>
+
+</body>
+
+</html>

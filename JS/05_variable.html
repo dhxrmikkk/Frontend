@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What is variable in js ?</h1>
+    <p>variable is a one type of container where we can store the value</p>
+    <p>we can define variable using three keyword</p>
+    <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+    <pre>
+    var a = 5;
+    let string = "Hello";
+    const number = 5;
+    </pre>
+    <script>
+        let kuchbhi = "something" //declaration with default value
+        console.log(kuchbhi);
+        // let kuchbhi = "something" //re-declaration not allowed in let 
+        kuchbhi = "data" //re-assignement allowed for the let 
+        console.log(kuchbhi);
+        
+        var data = "data" //declaration with default value in var
+        console.log(data);
+        var data = "tested" // re-declaration with default value with var allows
+        console.log(data);
+        data = "test" //Re-assignment
+        console.log(data);
+
+
+        const constData = "data"
+        // const constData = "data" // re-declaration not allowed
+        // const constData = "data" // re-assignment not allowed
+        console.log(data);
+        // constData = "test" //Assignment to constant variable.
+        // console.log(data);
+        something = "test"
+        console.log(something);
+    </script>
+</body>
+</html>

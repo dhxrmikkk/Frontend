@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // class ExampleClass{}
+        // ClassObject = new ExampleClass
+        // Test,123,Ahmedabad,9879879877,Male
+        // let UserDetails = ['Test',"Testing",'123','Ahmedabad','9879879877','Male']
+        let UserDetails = ['Neel', "Nitin", "Mukesh", '123', 'Ahmedabad', '9879879877', 'Male']
+        console.log(UserDetails[0]);
+        UserDetails.forEach(element => {
+            console.log(element);
+        });
+
+        let UserDetailsObject = { "FName": "Neel", "LName": "Nutin", "MName": "Mukesh", "Gender": "Male", "Location": "Ahmedabad", "Mobile": "9879879878", "Rank": 1, "Status": true }
+        console.log(UserDetailsObject);
+        console.log("Access Object", UserDetailsObject['FName']);
+        console.log(UserDetailsObject.FName);
+
+
+        // UserDetailsObject.forEach(element => {
+        //     console.log(element);
+        // });
+
+        for (const key in UserDetailsObject) {
+            console.log(key);
+            // console.log("Data",UserDetailsObject.key); // not able to access by . because for...in gives an ittrator we can access its data by [] 
+            console.log("Data", UserDetailsObject[key]);
+        }
+
+        console.log("Object.entries", Object.entries(UserDetailsObject));
+        console.log("Object.keys", Object.keys(UserDetailsObject));
+        console.log("Object.values", Object.values(UserDetailsObject));
+        // for (const iterator of UserDetailsObject) {
+        //     console.log("Data",iterator);
+        // }
+
+        // const obj = Object.create("data"); // we hv to specify key value pair for declaring the object
+        const obj = Object.create(null);
+        const objwithcruly = {};
+        const arrayData = [];
+
+        let userObject = new Object(); // "object constructor" syntax
+        let user = {};  // "object literal" syntax
+        console.log(obj);
+        console.log(objwithcruly);
+        // console.log(obj.__proto__);
+        console.log("__proto Object ", objwithcruly.__proto__);
+        console.log("__proto Array ", arrayData.__proto__);
+        const ages = { alice: 18, bob: 27 };
+
+        function hasPerson(name) {
+            return name in ages;
+        }
+
+        function getAge(name) {
+            return ages[name];
+        }
+
+        hasPerson("hasOwnProperty"); // true
+        getAge("toString"); // [Function: toString]
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scope of variable are listed below with example</h1>
+    <ol>
+        <li>
+            <p>Global Scope</p>
+            <p>A variable declared at the top of a program or outside of a function is considered a global scope variable.</p>
+            <pre>
+            let a = "hello";
+
+            function greet () {
+                console.log(a);
+            }
+            
+            greet(); // hello
+            </pre>
+        </li>
+        <li>
+            <p>Local Scope</p>
+            <p>A variable can also have a local scope, i.e it can only be accessed within a function.</p>
+            <pre>
+                let a = "hello";
+                function greet() {
+                    let b = "World"
+                    console.log(a + b);
+                }
+                greet();
+                console.log(a + b); // error
+            </pre>
+        </li>
+        <li>
+            <p>blocked scope variable</p>
+            <p>The let keyword is block-scoped (variable can be accessed only in the immediate block).</p>
+            <pre>
+                let a = 'Hello';
+
+                function greet() {
+
+                    // local variable
+                    let b = 'World';
+
+                    console.log(a + ' ' + b);
+
+                    if (b == 'World') {
+
+                        // block-scoped variable
+                        let c = 'hello';
+
+                        console.log(a + ' ' + b + ' ' + c);
+                    }
+
+                    // variable c cannot be accessed here
+                    console.log(a + ' ' + b + ' ' + c);
+                }
+
+                greet();
+            </pre>
+        </li>
+    </ol>
+</body>
+</html>

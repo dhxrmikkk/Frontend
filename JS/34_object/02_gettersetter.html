@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let Studnet = {
+            // data property
+            firstName: 'Default',
+            get getName() {
+                return this.firstName;
+            },
+            set changeName(newName) {
+                this.firstName = newName;
+            }
+        }
+
+        // accessing data property
+        console.log(Studnet.firstName); // Monica
+
+        // accessing getter methods
+        console.log(Studnet.getName); // Monica
+
+        // trying to access as a method
+        // console.log(student.getName()); // error
+
+        Studnet.changeName = 'Sarah';
+        console.log(Studnet.firstName); // Sarah
+        Studnet.changeName = 'Test';
+        console.log(Studnet.firstName); // Test
+
+
+        // function ()
+        // => ()
+    </script>
+
+</body>
+
+</html>
