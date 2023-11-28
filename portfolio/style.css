@@ -1,190 +1,146 @@
-/*------------------------------------------- Common CSS ------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-* {
+/* General CSS Starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root {
+    --offwhite: #F5F7F8;
+    --black: #000000;
+    --orange: #F4CE14;
+    --sage: #495E57;
+  }
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html {
+html{
     scroll-behavior: smooth;
 }
-body {
-    background-color: black;
-    color: #e6e6e6;
-    overflow-x: hidden;
+body{
+    background-color:#F5F7F8;
+    font-family: 'Poppins', sans-serif;
 }
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.row {
-    display: flex;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-div[class*="col"] {
-    padding: 0 15px;
-}
-.col {
-    flex: 1 0 0%;
-}
-/*------------------------------------------- section-1 ------------------------------------------- */
-.ml-a {
-    margin-left: auto;
-}
-.jss{
-    justify-content: space-between;
-}
-.navbar ul li {
-    display: inline-block;
-}
-.navbar ul li a {
-    text-decoration: none;
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 4px;
-    font-size: 1.5rem;
-    padding: 0 1.5rem;
-    color: #e6e6e6;
-}
-.navbar ul li a.animation{
+/* General CSS Ends */
+
+/* Header CSS Starts */
+.nav-link{
+    color: #000000;
+    text-transform: uppercase;
     display: inline-block;
     position: relative;
-    color: #e6e6e6;
+    opacity: 0.75;
 }
-.animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    transform: scaleX(0);
+.nav-link:hover{
+    color: #000000;
+    opacity: 1;
+}
+.nav-link::before {
+    transition: 300ms;
     height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffa024;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-.animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-.txt-c{
-    text-align: center;
+    content: "";
+    position: absolute;
+    background-color: #F4CE14;
 }
-.mt-30{
-    margin: 30px 0;
+.navbar-toggler{
+    border: none;
+}
+.nav-link-ltr::before {
+    width: 0%;
+    bottom:1px;
+    left:0;
 }
 
-/*------------------------------------------- section-2 ------------------------------------------- */
-.sec-2{
-    padding:1.8rem 0;
+.nav-link-ltr:hover::before {
+    width: 100%;
 }
-.col-50{
-    width: 50%;
+/* Header CSS Ends */
+
+/* Home Section CSS Starts */
+.title{
+    color: #F4CE14;
 }
-.col-60{
-    width: 60%;
-}
-.col-40{
-    width: 40%;
-}
-.pg-10{
-    padding: 13rem 4rem;
-}
-.name{
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 4px;
-    font-size: 1.5rem;
-    color: #e6e6e6;
-    font-size: 48px;
-    font-weight: 300;
-}
-.head{
-    letter-spacing: 4px;
-    font-size: 1.5rem;
-    color: #e6e6e6;
-    font-size: 22px;
-    font-weight: 300;
-}
-.icons{
-    padding: 1.4rem 0;
-}
-.icons a{
-    color: #e6e6e6;
-    font-size: 30px;
-    padding-right:0.5rem;
-    transition: 0.3s;
-}
-.icons a:hover{
-    color:#ffa024;
-    font-size: 42px;
-    /* padding-right:0.8rem; */
-    transition: 0.3s;
-}
-.typing-demo {
-    width: 16ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+.typography {
+    width: 19ch;
+    animation: typing 2s steps(19), blink .4s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    color: #ffa024;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
+    color: #000000;
+}
 
-/*------------------------------------------- section-3 ------------------------------------------- */
-.sec-3{
-    padding: 1.8rem 0;
+@keyframes typing {
+    from {
+        width: 0
+    }
 }
-.border{
-    border: 1px solid #e6e6e6;
+
+@keyframes blink {
+    40% {
+        margin-left: 0;
+        border-color: transparent
+    }
 }
-.card{
-    padding: 0.5rem;
+.icons{
+    font-size: 28px;
 }
-.pd-4{
-    padding: 0 4rem;
-}
-.col-o{
-    color: #ffa024;
-    font-size: 2rem;
-}
-.name2{
-    font-family: 'Montserrat', sans-serif;
-    margin: 2rem 0;
-}
-.buttondnld{
-    margin: 4rem 0;
-    padding: 0.5rem;
-    background-color: #ffa024;
+.icons i{
     color: black;
+}
+.icons i:hover{
+    color: #F4CE14;
+}
+.dharmikimg{
+    /* width: 50%; */
+    border-radius: 200px;
+}
+/* Home Section CSS Ends */
+
+/* About Section CSS Starts */
+.progress-bar{
+    background-color: #F4CE14;
+}
+/* About Section CSS Ends */
+
+/* Portfolio Section CSS Starts */
+.card{
+    background-color: #F5F7F8;
+}
+.card-header{
+    color: #000000;
+}
+.card-footer{
+    color: #000000;
+}
+.seemore{
+    background-color: #000000;
+    color: #F4CE14;
+    border-color: #000000;
+    border-radius: 20px;
+}
+.seemore:hover{
+    background-color: #000000;
+    color: #F4CE14;
+    border-color: #000000;
+    border-radius: 20px;
+}
+/* Portfolio Section CSS Ends */
+
+/* Footer Section CSS Starts */
+.contactinfo a{
     text-decoration: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
-    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+}
+
+.quicklinks a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer Section CSS Ends */
+
+
+/* External media-querys */
+@media (min-width: 992px)
+{
+    .info{
+        padding: 6rem 0;
+    }
 }

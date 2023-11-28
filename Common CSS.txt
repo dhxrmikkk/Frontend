@@ -1,0 +1,59 @@
+/* COMMON CSS START */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+  width: 100%;
+  dding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+div[class*="col"] {
+  padding: 0 15px;
+}
+.col {
+  flex: 1 0 0%;
+}
+.txt-l {
+  text-align: start;
+}
+.txt-c {
+  text-align: center;
+}
+.txt-e {
+  text-align: end;
+}
+.jss {
+  justify-content: space-between;
+}
+.pos-r {
+  position: relative;
+}
+.pos-ab {
+  position: absolute;
+}
+a {
+  text-decoration: none;
+}
+.navbar ul li {
+  display: inline-block;
+}
+/* COMMON CSS END */

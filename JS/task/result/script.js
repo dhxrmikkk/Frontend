@@ -13,20 +13,3 @@ function calculate(){
         document.getElementById("avg").innerHTML = "Avarage is : " + avg;
     }
 }
-
-
-let fnm = document.getElementById('fname')
-let unm = document.getElementById('fname')
-let email = document.getElementById('fname')
-let phone_no = document.getElementById('fname')
-let pswd = document.getElementById('fname')
-let cpswd = document.getElementById('fname')
-
-if (pswd == cpswd) {
-    console.log("password is matched")
-}
-else
-{
-    console.log("password is missmatched")
-
-}
