@@ -138,16 +138,25 @@ body{
 
 
 /* External media-querys */
-@media (min-width: 992px)
+@media (min-width: 1200px)
 {
+    .profilepic{
+        display: flex;
+        justify-content: center;
+    }
     .info{
         padding: 6rem 0;
     }
 }
-@media only screen and (min-width:0px) and (max-width:775px){
+@media only screen and (min-width:0px) and (max-width:992px){
     .profilepic{
         display: flex;
         flex-direction: column-reverse;
     }
 }
-
+/* @media (min-width: 768px) { 
+    .profilepic{
+        display: flex;
+        justify-content: center;
+    }
+} */
