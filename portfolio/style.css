@@ -154,9 +154,3 @@ body{
         flex-direction: column-reverse;
     }
 }
-/* @media (min-width: 768px) { 
-    .profilepic{
-        display: flex;
-        justify-content: center;
-    }
-} */
